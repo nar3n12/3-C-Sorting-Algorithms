@@ -15,7 +15,7 @@ void Insertionsort(void *array, int length,
 	int i, j; // loop indexes
 	
 	for (j = 1; j < length; j++) // index to insert array
-		for (i = j-1; 0 <= i; i--)
+		for (i = j-1; i >= 0; i--)
 		{
 			// compare to previous index and swap if needed
 			if (!Compare(array, i, i+1))
